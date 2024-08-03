@@ -76,7 +76,7 @@ const Register = () => {
         />
 
         <Button disabled={!isDirty || !isValid} type="submit">
-          Register Now
+          Regístrarse
         </Button>
       </form>
     </div>

@@ -18,15 +18,15 @@ const LoginPage = async () => {
     <div className="grid grid-cols-1 md:grid-cols-2">
       <div></div>
 
-      <Card title="Login now">
+      <Card title="Inicia sesión">
         <EmailLogin />
-        <LineBreak>or</LineBreak>
-        <ProviderLogin />
-        <LineBreak>or</LineBreak>
-        <Login />
-        <Link className="text-center hover:underline" href={"/forgot"}>
+        {/* <LineBreak>or</LineBreak> */}
+        {/* <ProviderLogin /> */}
+        {/* <LineBreak>or</LineBreak> */}
+        {/* <Login /> */}
+        {/* <Link className="text-center hover:underline" href={"/forgot"}>
           Olvidaste la contraseña?
-        </Link>
+        </Link> */}
       </Card>
     </div>
   );
