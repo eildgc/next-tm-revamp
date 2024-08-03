@@ -39,10 +39,10 @@ const Register = () => {
       >
         <Input
           type="text"
-          label="Your Full Name"
-          placeholder="Sandipan Das"
+          label="Tu nombre completo"
+          placeholder="John doe"
           {...register("name", {
-            required: "Name is required",
+            required: "El nombre es requerido",
           })}
           error={errors.name?.message}
         />
@@ -52,7 +52,7 @@ const Register = () => {
           label="Email"
           placeholder="hello@example.com"
           {...register("email", {
-            required: "Email is required",
+            required: "Correo es requerido",
             pattern: {
               value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
               message: "Invalid email address format",
