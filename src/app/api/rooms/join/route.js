@@ -3,6 +3,8 @@
 import dbConnect from "@/dbConnect/dbConnect";
 import Room from "@/app/models/Room";
 import { authOptions } from "../../auth/[...nextauth]/route";
+import { getServerSession } from 'next-auth';
+
 
 export async function POST(req) {
   const session = await getServerSession(authOptions);

@@ -18,7 +18,7 @@ const RegisterPage = async () => {
     <div className="grid grid-cols-1 md:grid-cols-2">
       <div></div>
 
-      <Card title={"Register now"}>
+      <Card title={"Regístrate ahora"}>
         <ProviderLogin />
         <LineBreak>or</LineBreak>
         <Register />

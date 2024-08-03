@@ -21,7 +21,7 @@ export default function CreateRoom() {
   if (!session) return <p>Please sign in to create a room.</p>;
 
   return (
-    <form onSubmit={createRoom}>
+    <form onSubmit={createRoom} className='flex flex-col'>
       <input
         type="text"
         value={roomName}
@@ -29,7 +29,7 @@ export default function CreateRoom() {
         placeholder="Enter room name"
         required
       />
-      <button type="submit">Create Room</button>
+      <button type="submit">Crear room</button>
     </form>
   );
 }

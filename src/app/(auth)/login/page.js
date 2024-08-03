@@ -25,7 +25,7 @@ const LoginPage = async () => {
         <LineBreak>or</LineBreak>
         <Login />
         <Link className="text-center hover:underline" href={"/forgot"}>
-          Forgot password?
+          Olvidaste la contraseña?
         </Link>
       </Card>
     </div>

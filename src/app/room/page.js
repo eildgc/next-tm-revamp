@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import EmblaCarousel from "@/components/carousel/EmblaCarousel";
 import AddCard from "@/components/card/AddCard";
+import PrintCards from "@/components/button/variantButton";
 
 const CardManager = () => {
   const [cards, setCards] = useState([]);
@@ -35,6 +36,9 @@ const CardManager = () => {
 
   return (
     <div>
+      <div className="w-full mx-auto text-center">
+        <PrintCards cards={cards} />
+      </div>
       {isLoading ? (
         <button
           type="button"
@@ -70,7 +74,7 @@ const CardManager = () => {
           onCardDeleted={handleCardDeleted}
         />
       )}
-      <div className="bg-sky-950 border border-sky-900 rounded-md text-sky-50 w-4/6 mt-10 px-10 pt-6 pb-10 mx-auto">
+      <div className="bg-sky-950 border border-sky-900 rounded-md text-sky-50 w-full md:w-4/6 mt-10 px-10 pt-6 pb-10 mx-auto">
         <h2 className="text-xl text-white py-4">Agregar tarjetas</h2>
         <AddCard onCardAdded={handleCardAdded} />
       </div>

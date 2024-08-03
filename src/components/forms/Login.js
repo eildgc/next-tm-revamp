@@ -44,10 +44,10 @@ const Login = () => {
           label="Email"
           placeholder="hello@example.com"
           {...register("email", {
-            required: "Email is required",
+            required: "Correo es requerido",
             pattern: {
               value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-              message: "Invalid email address format",
+              message: "El formato del correo es erróneo",
             },
           })}
           error={errors.email?.message}
@@ -60,7 +60,7 @@ const Login = () => {
             required: "Password is required",
             minLength: {
               value: 8,
-              message: "Password must be at least 8 characters",
+              message: "La contraseña debe tener al menos 8 carácteres",
             },
           })}
           error={errors.password?.message}

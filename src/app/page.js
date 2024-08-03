@@ -1,7 +1,3 @@
-import CreateRoom from "@/components/room/CreateRoom";
-import JoinRoom from "@/components/room/JoinRoom";
-import Image from "next/image";
-
 export default function Home() {
   return (
     <main className="w-full flex flex-col gap-4 md:gap-36 mx-auto px-4 md:px-20 py-8 relative">
@@ -20,8 +16,6 @@ export default function Home() {
             conexión, permitiendo que todos compartan sus experiencias y
             pensamientos.
           </p>
-          <CreateRoom />
-          <JoinRoom />
         </div>
       </div>
       <div className="w-full h-full flex flex-col md:flex-row gap-4 justify-center content-center text-sky-50 mt-0 md:mt-6">

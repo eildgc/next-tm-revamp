@@ -29,7 +29,7 @@ export default function JoinRoom() {
         placeholder="Enter room join link"
         required
       />
-      <button type="submit">Join Room</button>
+      <button type="submit">Unirse a room</button>
     </form>
   );
 }

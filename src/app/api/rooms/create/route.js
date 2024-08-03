@@ -2,6 +2,7 @@
 import Room from '@/app/models/Room';
 import dbConnect from '@/dbConnect/dbConnect';
 import { v4 as uuidv4 } from 'uuid';
+import { getServerSession } from 'next-auth';
 import { authOptions } from '../../auth/[...nextauth]/route';
 
 export async function POST(req) {
