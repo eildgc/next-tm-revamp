@@ -1,6 +1,7 @@
 // pages/api/rooms/join.js
-import dbConnect from "../../../utils/dbConnect";
-import Room from "../../../models/Room";
+
+import dbConnect from "@/dbConnect/dbConnect";
+import Room from "@/models/Room";
 import { authOptions } from "../../auth/[...nextauth]/route";
 
 export async function POST(req) {

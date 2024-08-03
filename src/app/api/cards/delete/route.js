@@ -1,4 +1,4 @@
-import card from '@/app/models/card';
+import Card from '@/app/models/Card';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '../../auth/[...nextauth]/route';
 import dbConnect from '@/dbConnect/dbConnect';
@@ -26,7 +26,7 @@ export async function DELETE(req) {
       });
     }
 
-    const cardToDelete = await card.findById(id);
+    const cardToDelete = await Card.findById(id);
 
     if (!cardToDelete) {
       return new Response(JSON.stringify({ message: 'Card not found' }), {

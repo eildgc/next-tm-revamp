@@ -1,4 +1,4 @@
-import Card from '@/app/models/card';
+import Card from '@/app/models/Card';
 import dbConnect from "@/dbConnect/dbConnect";
 import { getServerSession } from "next-auth";
 import { authOptions } from '../../auth/[...nextauth]/route';
